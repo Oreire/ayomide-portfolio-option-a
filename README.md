@@ -409,3 +409,8 @@ The project is hosted on **Netlify**, with **GitHub as the single source of trut
 
 This project demonstrates strong capability in **front‑end development**, **containerisation**, **DevOps workflows**, and **modern deployment practices**, forming the foundation for future enhancements in Options B and C (API‑driven and serverless backends).
 
+
+
+
+http://ayomide-portfolio.local
+

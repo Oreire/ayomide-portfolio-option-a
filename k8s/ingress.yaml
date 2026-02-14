@@ -1,13 +1,29 @@
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   name: ayomide-portfolio-a
+# spec:
+#   ingressClassName: nginx
+#   rules:
+#     - host: ayomide-portfolio.local   # <-- update to your real domain
+#       http:
+#         paths:
+#           - path: /
+#             pathType: Prefix
+#             backend:
+#               service:
+#                 name: ayomide-portfolio-a
+#                 port:
+#                   number: 80
 
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ayomide-portfolio-a
-  annotations:
-    kubernetes.io/ingress.class: nginx
 spec:
+  ingressClassName: nginx
   rules:
-    - host: your-domain.example.com
+    - host: ayomide-portfolio.local
       http:
         paths:
           - path: /
@@ -17,3 +33,4 @@ spec:
                 name: ayomide-portfolio-a
                 port:
                   number: 80
+
