@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: web
-          image: ayomide/portfolio-option-a:latest
-          imagePullPolicy: IfNotPresent
+          image: ayomide-portfolio-a:v2   # <-- UPDATED IMAGE TAG
+          imagePullPolicy: Always         # <-- ENSURES K8s ALWAYS PULLS NEW IMAGE
           ports:
             - containerPort: 80
           resources:
@@ -27,3 +27,4 @@ spec:
             limits:
               cpu: "250m"
               memory: "128Mi"
+
