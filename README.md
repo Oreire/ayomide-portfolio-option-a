@@ -389,3 +389,23 @@ Optional Cluster Path:
 - A **Docker workflow diagram**  
 - A **CV‑ready project summary**  
 
+CV
+**CV‑Ready Project Summary
+
+**Static Portfolio Website | Nginx | Docker | Docker Compose | Kubernetes | Netlify CI/CD**
+
+Designed and deployed a fully responsive, multi‑page **static portfolio website** built with HTML, CSS, and JavaScript, packaged for production using **Nginx** and containerised with **Docker**. Implemented a clean deployment workflow using **Docker Compose** for local orchestration and provided optional **Kubernetes manifests** for scalable cluster deployment.  
+
+The project is hosted on **Netlify**, with **GitHub as the single source of truth**, enabling automated CI/CD where every commit to the `main` branch triggers a fresh build and instant redeployment.  
+
+# Key achievements include:
+
+- Developed a structured, accessible, and mobile‑friendly multi‑page portfolio using semantic HTML, modular CSS, and lightweight JavaScript.  
+- Configured **Nginx** to serve static assets efficiently, ensuring fast load times and clean routing.  
+- Built a production‑ready **Docker image** and automated local development using **Docker Compose**.  
+- Authored **Kubernetes deployment, service, and ingress manifests** to support cloud‑native deployment scenarios.  
+- Implemented **continuous deployment** via Netlify, enabling automated builds and live updates directly from GitHub.  
+- Ensured portability and scalability across environments, from local development to containerised and cloud‑based hosting.  
+
+This project demonstrates strong capability in **front‑end development**, **containerisation**, **DevOps workflows**, and **modern deployment practices**, forming the foundation for future enhancements in Options B and C (API‑driven and serverless backends).
+
