@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Ayomide Ajayi</title>
+  <meta name="description" content="Portfolio and courses site for Ayomide – Digital, Networking & Cybersecurity Tutor." />
+  <meta property="og:title" content="Contact | Ayomide Ajayi" />
+  <meta property="og:description" content="Empowering learners for the digital, networking & cybersecurity future." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html">Ayomide <span class="surname">Ajayi</span></a>
+      <nav class="nav">
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/about.html" class="nav-link">About</a>
+        <a href="/portfolio.html" class="nav-link">Portfolio</a>
+        <a href="/courses.html" class="nav-link">Courses</a>
+        <a href="/contact.html" class="nav-link cta">Contact</a>
+      </nav>
+      <button class="burger" aria-label="Open Menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+  <main>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Get in Touch</h1>
+    <p class="lead">Whether you’re a college, training provider, employer, or learner, I’d love to connect.</p>
+  </div>
+</section>
+
+<section class="content-block">
+  <div class="container two-col">
+    <form class="contact-form" id="contactForm" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="How can I help?" required></textarea>
+
+      <button type="submit" class="btn primary">Send Message</button>
+      <p class="form-note">This demo form runs client‑side only in Option A. For emailing/storage, we’ll enable it in Options B/C.</p>
+    </form>
+
+    <aside class="card">
+      <h3>Direct Contact</h3>
+      <ul class="contacts">
+        <li>📧 Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+        <li>🔗 LinkedIn: <a href="#" target="_blank" rel="noopener">Add your link</a></li>
+        <li>📍 Based in Quinton, West Midlands</li>
+      </ul>
+      <div class="extras">
+        <a class="btn" href="#">Book a consultation</a>
+        <a class="btn outline" href="#">Download my CV</a>
+        <a class="btn outline" href="#">Request a portfolio pack</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Ayomide Ajayi. All rights reserved.</div>
+      <div class="foot-nav">
+        <a href="/about.html">About</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a href="/courses.html">Courses</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

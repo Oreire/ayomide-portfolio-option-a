@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ayomide-portfolio-a
+  labels:
+    app: ayomide-portfolio-a
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ayomide-portfolio-a
+  template:
+    metadata:
+      labels:
+        app: ayomide-portfolio-a
+    spec:
+      containers:
+        - name: web
+          image: ayomide/portfolio-option-a:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "64Mi"
+            limits:
+              cpu: "250m"
+              memory: "128Mi"

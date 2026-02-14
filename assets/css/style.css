@@ -1,0 +1,49 @@
+
+:root{
+  --bg:#0b1020; --panel:#121832; --text:#e6e8ef; --muted:#a5acc3; --brand:#6ee7b7; --brand-2:#60a5fa; --danger:#ef4444;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:'Inter',system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.container{width:min(1120px,92%);margin-inline:auto}
+.site-header{position:sticky;top:0;background:rgba(11,16,32,0.85);backdrop-filter:saturate(180%) blur(6px);border-bottom:1px solid #1a2445;z-index:50}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0}
+.brand{font-weight:800;color:var(--text);text-decoration:none;letter-spacing:.3px}
+.brand .surname{color:var(--brand)}
+.nav{display:flex;gap:1rem}
+.nav-link{color:var(--muted);text-decoration:none;padding:.4rem .6rem;border-radius:.5rem}
+.nav-link:hover,.nav .cta{color:#0b1020;background:linear-gradient(90deg,var(--brand),var(--brand-2));}
+.burger{display:none;background:none;border:1px solid #263057;color:var(--text);padding:.3rem .5rem;border-radius:.4rem}
+.hero{padding:4rem 0;background:radial-gradient(80% 120% at 50% 0%, #15204a 0%, #0b1020 60%)}
+.eyebrow{color:var(--brand);font-weight:600;letter-spacing:.4px;margin:0 0 .5rem}
+.hero h1{font-size:clamp(1.9rem,4.5vw,3rem);margin:.2rem 0 1rem}
+.subhead{color:var(--muted);font-weight:600}
+.intro{color:var(--text);max-width:70ch}
+.cta-group{margin-top:1.25rem;display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{border:1px solid #2a355f;color:var(--text);text-decoration:none;padding:.7rem 1rem;border-radius:.6rem;display:inline-block}
+.btn.primary{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#0b1020;font-weight:700;border:none}
+.btn.outline{border-color:#3a4675}
+.key-expertise{padding:2.5rem 0}
+.key-expertise h2{margin:0 0 1rem}
+.pill-list{display:flex;flex-wrap:wrap;gap:.6rem;padding:0;list-style:none}
+.pill-list li{background:#141c3b;border:1px solid #1e2a54;color:var(--text);padding:.5rem .75rem;border-radius:999px}
+.quote{padding:2rem 0;border-top:1px solid #1a2445;border-bottom:1px solid #1a2445;background:#0f1430}
+blockquote{margin:0;font-size:1.2rem;color:#cbd3ea;font-style:italic}
+.page-hero{padding:3rem 0;border-bottom:1px solid #1a2445;background:linear-gradient(180deg,#101736,#0b1020)}
+.page-hero h1{margin:0 0 .5rem}
+.page-hero .lead{color:var(--muted)}
+.content-block{padding:2rem 0}
+.two-col{display:grid;grid-template-columns:2fr 1fr;gap:1.5rem}
+.card{background:#11183a;border:1px solid #1e2a54;border-radius:.8rem;padding:1rem}
+.checklist,.bullets{padding-left:1.1rem}
+.checklist li{margin:.5rem 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;padding:2rem 0}
+.course-card{background:#101737;border:1px solid #1d2852;border-radius:.8rem;padding:1rem}
+.site-footer{border-top:1px solid #1a2445;margin-top:3rem}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0;color:var(--muted)}
+.contacts{padding-left:0;list-style:none}
+.contacts li{margin:.4rem 0}
+.form-note{color:var(--muted);font-size:.9rem}
+.contact-form{display:grid;gap:.6rem}
+.contact-form input,.contact-form textarea{background:#0e1430;border:1px solid #1f2b58;color:var(--text);border-radius:.5rem;padding:.6rem}
+.contact-form input:focus,.contact-form textarea:focus{outline:2px solid #3550cc}
+@media (max-width: 860px){.two-col{grid-template-columns:1fr}.nav{display:none}.burger{display:block}}
